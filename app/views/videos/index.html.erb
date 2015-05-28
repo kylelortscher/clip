@@ -2,7 +2,7 @@
 
 <h1>Listing Videos</h1>
 
-<table>
+<table =class"table">
   <thead>
     <tr>
       <th>Video url</th>
@@ -16,9 +16,9 @@
       <tr>
         <td><%= video.video_url %></td>
         <td><%= video.title %></td>
-        <td><%= link_to 'Show', video %></td>
-        <td><%= link_to 'Edit', edit_video_path(video) %></td>
-        <td><%= link_to 'Destroy', video, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', video, class:"btn btn-links" %></td>
+        <td><%= link_to 'Edit', edit_video_path(video), class:"btn btn-links" %></td>
+        <td><%= link_to 'Destroy', video, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-links" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New Video', new_video_path %>
+<%= link_to 'New Video', new_video_path, class:"btn btn-links" %>
